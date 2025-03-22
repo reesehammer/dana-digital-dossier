@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,42 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				sand: {
-					50: '#f9f7f5',
-					100: '#f1ede8',
-					200: '#e8e1d8',
-					300: '#d8cabe',
-					400: '#c4b1a0',
-					500: '#b29a85',
-					600: '#a58772',
-					700: '#957966',
-					800: '#796256',
-					900: '#63514a',
-					950: '#352a25',
-				},
-				cream: {
-					50: '#fbf9f6',
-					100: '#f6f1ea',
-					200: '#ede2d2',
-					300: '#e2cdb3',
-					400: '#d4b28e',
-					500: '#c89972',
-					600: '#bb835f',
-					700: '#a56c4e',
-					800: '#875943',
-					900: '#6e4937',
-					950: '#3a241b',
-				},
+				cream: '#FEFAE0',
+				brown: '#bc6c25',
+				sand: '#efdcac',
+				tan: '#d4a373',
+				olive: '#606c38',
+				forest: '#45462a',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -96,9 +65,9 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				serif: ['Playfair Display', 'serif'],
-				display: ['Cormorant Garamond', 'serif'],
+				sans: ['Lato', 'sans-serif'],
+				heading: ['Poppins', 'sans-serif'],
+				display: ['Chango', 'cursive'],
 			},
 			keyframes: {
 				'accordion-down': {

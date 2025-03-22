@@ -21,23 +21,23 @@ const Index = () => {
         ref={heroRef as React.RefObject<HTMLDivElement>}
         className="relative min-h-[70vh] flex items-center pt-16"
       >
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-sand-50 to-white/0 pointer-events-none"></div>
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-sand to-cream/0 pointer-events-none"></div>
         
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <div className={`transition-all duration-1000 ${isHeroVisible ? 'opacity-100' : 'opacity-0'}`}>              
-              <h1 className="text-6xl md:text-8xl font-serif font-bold mb-6 tracking-tight">
+              <h1 className="hero-title text-6xl md:text-8xl font-bold mb-6 tracking-tight text-forest">
                 Hi, I'm Dana.
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+              <p className="text-xl md:text-2xl text-olive mb-8">
                 Subtitle
               </p>
               
               <div className="flex justify-center">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-accent hover:bg-accent/80 transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-brown text-cream hover:bg-brown/90 transition-colors"
                 >
                   Get in Touch
                 </Link>
@@ -52,8 +52,8 @@ const Index = () => {
         <div className="container">          
           <div className="mb-16">
             <div className="flex justify-between items-center mb-8">
-              <h3 className="text-2xl font-serif font-bold">Videos</h3>
-              <Link to="/videos" className="text-primary hover:underline flex items-center">
+              <h3 className="text-2xl font-heading font-bold text-forest">Videos</h3>
+              <Link to="/videos" className="text-brown hover:underline flex items-center">
                 View all videos <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
@@ -68,8 +68,8 @@ const Index = () => {
           {/* Articles Section */}
           <div>
             <div className="flex justify-between items-center mb-8">
-              <h3 className="text-2xl font-serif font-bold">Articles</h3>
-              <Link to="/articles" className="text-primary hover:underline flex items-center">
+              <h3 className="text-2xl font-heading font-bold text-forest">Articles</h3>
+              <Link to="/articles" className="text-brown hover:underline flex items-center">
                 View all articles <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
@@ -84,16 +84,16 @@ const Index = () => {
       </section>
       
       {/* Call to Action */}
-      <section className="py-20 bg-sand-50">
+      <section className="py-20 bg-sand">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Let's Work Together</h2>
-            <p className="text-muted-foreground mb-8">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-forest">Let's Work Together</h2>
+            <p className="text-olive mb-8">
               Interested in collaborating on a project? I'm always open to discussing new opportunities and ideas.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-brown text-cream hover:bg-brown/90 transition-colors"
             >
               Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
