@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Dana's Digital Portfolio</title>
+    <meta name="description" content="Get in touch with Dana" />
+    <meta name="author" content="Dana" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Dana</a>
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </div>
+          <button class="mobile-menu-btn">
+            <span class="menu-icon">≡</span>
+          </button>
+        </nav>
+      </div>
+      <div class="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="resume.html" class="mobile-nav-link">Resume</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Contact Header -->
+      <section class="contact-header">
+        <div class="container">
+          <div class="contact-header-content">
+            <h1 class="contact-title">Get in Touch</h1>
+            
+            <p class="contact-subtitle">
+              Have a question, project idea, or just want to say hello? I'd love to hear from you. 
+              Fill out the form below or reach out directly via email or phone.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <h2 class="contact-section-title">Contact Information</h2>
+              
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="contact-icon-wrapper">
+                    <span class="contact-icon">✉️</span>
+                  </div>
+                  <div class="contact-method-content">
+                    <h3 class="contact-method-title">Email</h3>
+                    <a href="mailto:hello@dananews.com" class="contact-method-value">hello@dananews.com</a>
+                  </div>
+                </div>
+                
+                <div class="contact-method">
+                  <div class="contact-icon-wrapper">
+                    <span class="contact-icon">📞</span>
+                  </div>
+                  <div class="contact-method-content">
+                    <h3 class="contact-method-title">Phone</h3>
+                    <a href="tel:+1234567890" class="contact-method-value">+1 (234) 567-890</a>
+                  </div>
+                </div>
+                
+                <div class="contact-method">
+                  <div class="contact-icon-wrapper">
+                    <span class="contact-icon">📍</span>
+                  </div>
+                  <div class="contact-method-content">
+                    <h3 class="contact-method-title">Location</h3>
+                    <p class="contact-method-value">New York, NY, United States</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="hours-box">
+                <h3 class="hours-title">Working Hours</h3>
+                <div class="hours-content">
+                  <p>Monday - Friday: 9am to 6pm EST</p>
+                  <p>Weekend: By appointment</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Form -->
+            <div class="contact-form-wrapper">
+              <h2 class="contact-section-title">Send a Message</h2>
+              
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input id="name" type="text" class="form-control" placeholder="John Doe" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input id="email" type="email" class="form-control" placeholder="john@example.com" required>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input id="subject" type="text" class="form-control" placeholder="How can I help you?" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" rows="5" class="form-control" placeholder="Your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary submit-btn">
+                  <span id="submitText">Send Message</span> <span class="send-icon">✉️</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Location Map Section -->
+      <section class="map-section">
+        <div class="container">
+          <div class="map-container">
+            <!-- Placeholder for map -->
+            <div class="map-placeholder">
+              <p>Map goes here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3 class="footer-logo">Dana</h3>
+            <p class="footer-description">
+              News producer crafting compelling stories that inform and inspire.
+            </p>
+          </div>
+          
+          <div class="footer-nav">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="resume.html" class="footer-link">Resume</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-social">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <span class="social-icon">𝕏</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <span class="social-icon">📷</span>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <span class="social-icon">🔗</span>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <span class="social-icon">▶️</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-contact">
+            <h4 class="footer-heading">Contact</h4>
+            <a href="mailto:hello@dananews.com" class="footer-contact-link">
+              <span class="mail-icon">✉️</span> hello@dananews.com
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="copyright">© <span id="current-year"></span> Dana. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#" class="legal-link">Privacy Policy</a>
+            <a href="#" class="legal-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Contact form submission handling
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = document.querySelector('.submit-btn');
+        const submitText = document.getElementById('submitText');
+        
+        // Simulate form submission
+        submitBtn.disabled = true;
+        submitText.textContent = 'Sending...';
+        
+        setTimeout(() => {
+          alert('Message sent successfully! I will get back to you soon.');
+          
+          // Reset form
+          this.reset();
+          submitBtn.disabled = false;
+          submitText.textContent = 'Send Message';
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>

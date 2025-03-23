@@ -7,46 +7,301 @@
     <title>Dana's Digital Portfolio</title>
     <meta name="description" content="Dana's Professional Portfolio" />
     <meta name="author" content="Dana" />
-
     <meta property="og:title" content="Dana's Digital Portfolio" />
     <meta property="og:description" content="Dana's Professional Portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-    <!-- End Single Page Apps for GitHub Pages -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="./src/main.tsx"></script>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Dana</a>
+          <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </div>
+          <button class="mobile-menu-btn">
+            <span class="menu-icon">≡</span>
+          </button>
+        </nav>
+      </div>
+      <div class="mobile-menu">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="about.html" class="mobile-nav-link">About</a>
+        <a href="resume.html" class="mobile-nav-link">Resume</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Dana.</h1>
+            <p class="hero-subtitle">Subtitle</p>
+            <div class="hero-cta">
+              <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Content Section -->
+      <section class="content-section">
+        <div class="container">
+          <!-- Videos Section -->
+          <div class="section-block">
+            <div class="section-header">
+              <h3 class="section-title">Videos</h3>
+              <a href="#" class="view-all">View all videos <span class="arrow-icon">→</span></a>
+            </div>
+            
+            <div class="cards-grid">
+              <!-- Video Card 1 -->
+              <div class="video-card">
+                <div class="card-media">
+                  <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Exclusive Interview with Tech CEO" class="card-img">
+                  <div class="card-overlay"></div>
+                  <button class="play-btn" aria-label="Play video">
+                    <span class="play-icon">▶</span>
+                  </button>
+                  <div class="card-preview-info">
+                    <h3 class="card-title-overlay">Exclusive Interview with Tech CEO</h3>
+                    <div class="card-watch">Watch now</div>
+                  </div>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Technology</span>
+                    <span class="card-date">May 15, 2023</span>
+                  </div>
+                  <h3 class="card-title">Exclusive Interview with Tech CEO</h3>
+                  <p class="card-description">A deep dive into the future of artificial intelligence with industry leaders</p>
+                </div>
+              </div>
+              
+              <!-- Video Card 2 -->
+              <div class="video-card">
+                <div class="card-media">
+                  <img src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Breaking News: Climate Summit" class="card-img">
+                  <div class="card-overlay"></div>
+                  <button class="play-btn" aria-label="Play video">
+                    <span class="play-icon">▶</span>
+                  </button>
+                  <div class="card-preview-info">
+                    <h3 class="card-title-overlay">Breaking News: Climate Summit</h3>
+                    <div class="card-watch">Watch now</div>
+                  </div>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Environment</span>
+                    <span class="card-date">March 10, 2023</span>
+                  </div>
+                  <h3 class="card-title">Breaking News: Climate Summit</h3>
+                  <p class="card-description">Coverage of the international climate conference and its implications</p>
+                </div>
+              </div>
+              
+              <!-- Video Card 3 -->
+              <div class="video-card">
+                <div class="card-media">
+                  <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Inside the Capitol: Political Analysis" class="card-img">
+                  <div class="card-overlay"></div>
+                  <button class="play-btn" aria-label="Play video">
+                    <span class="play-icon">▶</span>
+                  </button>
+                  <div class="card-preview-info">
+                    <h3 class="card-title-overlay">Inside the Capitol: Political Analysis</h3>
+                    <div class="card-watch">Watch now</div>
+                  </div>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Politics</span>
+                    <span class="card-date">February 28, 2023</span>
+                  </div>
+                  <h3 class="card-title">Inside the Capitol: Political Analysis</h3>
+                  <p class="card-description">An in-depth look at recent legislative developments and their impact</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Articles Section -->
+          <div class="section-block">
+            <div class="section-header">
+              <h3 class="section-title">Articles</h3>
+              <a href="#" class="view-all">View all articles <span class="arrow-icon">→</span></a>
+            </div>
+            
+            <div class="cards-grid">
+              <!-- Article Card 1 -->
+              <div class="article-card">
+                <div class="card-media">
+                  <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="The Evolution of AI in Journalism" class="card-img">
+                  <div class="card-overlay"></div>
+                  <div class="card-preview-info">
+                    <h3 class="card-title-overlay">The Evolution of AI in Journalism</h3>
+                    <div class="card-watch">Read article</div>
+                  </div>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Technology</span>
+                    <span class="card-date">April 22, 2023</span>
+                  </div>
+                  <h3 class="card-title">The Evolution of AI in Journalism</h3>
+                  <p class="card-description">How artificial intelligence is transforming news gathering and reporting</p>
+                  <div class="card-footer">
+                    <span class="read-time">8 min read</span>
+                    <a href="#" class="read-link">Read Article <span class="arrow-icon-small">↗</span></a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Article Card 2 -->
+              <div class="article-card">
+                <div class="card-media">
+                  <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sustainable Fashion: Beyond the Buzzwords" class="card-img">
+                  <div class="card-overlay"></div>
+                  <div class="card-preview-info">
+                    <h3 class="card-title-overlay">Sustainable Fashion: Beyond the Buzzwords</h3>
+                    <div class="card-watch">Read article</div>
+                  </div>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Environment</span>
+                    <span class="card-date">March 15, 2023</span>
+                  </div>
+                  <h3 class="card-title">Sustainable Fashion: Beyond the Buzzwords</h3>
+                  <p class="card-description">An investigation into the reality of sustainability claims in the fashion industry</p>
+                  <div class="card-footer">
+                    <span class="read-time">12 min read</span>
+                    <a href="#" class="read-link">Read Article <span class="arrow-icon-small">↗</span></a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Article Card 3 -->
+              <div class="article-card">
+                <div class="card-media">
+                  <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="The Changing Landscape of Global Politics" class="card-img">
+                  <div class="card-overlay"></div>
+                  <div class="card-preview-info">
+                    <h3 class="card-title-overlay">The Changing Landscape of Global Politics</h3>
+                    <div class="card-watch">Read article</div>
+                  </div>
+                </div>
+                
+                <div class="card-body">
+                  <div class="card-meta">
+                    <span class="card-category">Politics</span>
+                    <span class="card-date">February 8, 2023</span>
+                  </div>
+                  <h3 class="card-title">The Changing Landscape of Global Politics</h3>
+                  <p class="card-description">Analysis of shifting international alliances and power dynamics</p>
+                  <div class="card-footer">
+                    <span class="read-time">10 min read</span>
+                    <a href="#" class="read-link">Read Article <span class="arrow-icon-small">↗</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Call to Action -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="cta-title">Let's Work Together</h2>
+            <p class="cta-text">
+              Interested in collaborating on a project? I'm always open to discussing new opportunities and ideas.
+            </p>
+            <a href="contact.html" class="btn btn-primary">
+              Get in Touch <span class="arrow-icon">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3 class="footer-logo">Dana</h3>
+            <p class="footer-description">
+              News producer crafting compelling stories that inform and inspire.
+            </p>
+          </div>
+          
+          <div class="footer-nav">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="about.html" class="footer-link">About</a></li>
+              <li><a href="resume.html" class="footer-link">Resume</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-social">
+            <h4 class="footer-heading">Connect</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <span class="social-icon">𝕏</span>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <span class="social-icon">📷</span>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <span class="social-icon">🔗</span>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <span class="social-icon">▶️</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-contact">
+            <h4 class="footer-heading">Contact</h4>
+            <a href="mailto:hello@dananews.com" class="footer-contact-link">
+              <span class="mail-icon">✉️</span> hello@dananews.com
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="copyright">© <span id="current-year"></span> Dana. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="#" class="legal-link">Privacy Policy</a>
+            <a href="#" class="legal-link">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
